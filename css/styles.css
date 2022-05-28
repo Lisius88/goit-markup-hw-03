@@ -21,6 +21,7 @@
 
 ul {
     list-style: none;
+    margin: 0px;
 }
 
 body {
@@ -29,8 +30,22 @@ body {
     background-color: var(--background-main);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
 a {
     text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 /* Хэдэр */
@@ -90,17 +105,57 @@ header {
     color: #2196F3;
 }
 
-.header-container {
+.header-container {}
+
+.container {
     width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: blue;
+    height: 80px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
+.header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item {
+    margin-right: 50px;
+}
+
+.site-nav .item:first-child {
+    margin-left: 93px;
+}
+
+.contacts-nav {
+    display: flex;
+}
+
+.contacts-nav .item {
+    margin-left: 50px;
+}
+
+
+
 /* Footer */
+
+.footer-div {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .adress {
     font-style: normal;
     font-weight: 400;
@@ -128,16 +183,21 @@ footer {
 
 /* Main */
 .hero {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3;
     color: var(--background-main);
-    text-align: center;
     text-transform: uppercase;
 }
 
 .hero-section {
     background-color: var(--background-footer);
+    width: 1170px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .button {
@@ -153,10 +213,32 @@ footer {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    text-align: center;
     background-color: #2196F3;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+/* Main-info */
+
+.main-container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-info-list {
+    padding: 0;
+    margin-left: 0;
+
+
+    display: flex;
+}
+
+.main-info-list>.main-info-item {
+    margin-left: 30px;
 }
 
 .main-info {
@@ -174,6 +256,20 @@ footer {
 }
 
 /* Чем занимаемся */
+
+.examples-list {
+    display: flex;
+}
+
+.examples-list .examples-item {}
+
+.about-us-container {
+    background-color: yellow;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .about-us {
     font-weight: 700;
     font-size: 36px;
@@ -183,6 +279,40 @@ footer {
 }
 
 /* Team */
+
+.team-div {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.person-list {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    margin-left: -30px;
+}
+
+.person-list .person-item {
+    flex-basis: calc(100% / 4 -30px);
+
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card-content {
+    padding: 30px 59px;
+}
+
 .team-workers {
     font-weight: 700;
     font-size: 36px;
@@ -196,12 +326,14 @@ footer {
     font-size: 16px;
     line-height: 1.2;
     color: var(--color-h);
+    text-align: center;
 }
 
 .position {
     font-size: 16px;
     line-height: 1.2;
     color: var(--color-text);
+    text-align: center;
 }
 
 /* Portfolio html */
