@@ -35,7 +35,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin: 0px;
 }
 
@@ -105,13 +106,13 @@ header {
     color: #2196F3;
 }
 
-.header-container {}
 
 .container {
-    width: 1170px;
-    height: 80px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header-div {
@@ -127,11 +128,16 @@ header {
 
 
 .site-nav {
+    padding: 0;
+    margin: 0;
+
     display: flex;
 }
 
 .site-nav .item {
     margin-right: 50px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .site-nav .item:first-child {
@@ -146,14 +152,23 @@ header {
     margin-left: 50px;
 }
 
+.line {
+    width: 1700px;
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ECECEC;
+}
 
 
 /* Footer */
 
 .footer-div {
-    width: 1170px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .adress {
@@ -177,28 +192,40 @@ header {
     color: #2196F3;
 }
 
+.footer-adress {
+    padding-bottom: 60px;
+}
+
+.div-logo {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
 footer {
     background-color: var(--background-footer);
 }
 
 /* Main */
+
+.hero-section {
+    background-color: var(--background-footer);
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
 .hero {
-    margin-bottom: 30px;
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.3;
     color: var(--background-main);
     text-transform: uppercase;
 }
 
-.hero-section {
-    background-color: var(--background-footer);
-    width: 1170px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
+
 
 .button {
     display: inline-block;
@@ -221,7 +248,7 @@ footer {
 /* Main-info */
 
 .main-container {
-    width: 1170px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
 
@@ -231,15 +258,25 @@ footer {
 
 .main-info-list {
     padding: 0;
-    margin-left: 0;
+    margin: 0;
 
 
     display: flex;
+    padding-top: 94px;
+    margin-left: -30px;
+
+
 }
 
-.main-info-list>.main-info-item {
+.main-info-list .main-info-item {
+    flex-basis: calc(100% / 4 -30px);
     margin-left: 30px;
+    text-align: left;
+    width: 270px;
 }
+
+
+
 
 .main-info {
     font-weight: 700;
@@ -247,28 +284,43 @@ footer {
     line-height: 1.14;
     color: var(--color-h);
     text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 .description {
     font-size: 14px;
     line-height: 1.71;
     color: var(--color-text);
+    letter-spacing: 0.03em;
+    margin-top: 10px;
 }
 
 /* Чем занимаемся */
 
-.examples-list {
-    display: flex;
-}
-
-.examples-list .examples-item {}
-
 .about-us-container {
-    background-color: yellow;
-    width: 1170px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+.examples-list {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    margin-left: -30px;
+}
+
+.examples-list .examples-item {
+    flex-basis: calc(100% / 3 -30px);
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
+
+
 
 .about-us {
     font-weight: 700;
@@ -276,12 +328,13 @@ footer {
     line-height: 1.16;
     text-align: center;
     color: var(--color-h);
+    padding-top: 94px;
 }
 
 /* Team */
 
 .team-div {
-    width: 1170px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -294,6 +347,8 @@ footer {
 
     display: flex;
     margin-left: -30px;
+
+
 }
 
 .person-list .person-item {
@@ -301,6 +356,7 @@ footer {
 
     margin-left: 30px;
     margin-top: 50px;
+    margin-bottom: 94px;
 }
 
 .card {
@@ -318,7 +374,8 @@ footer {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    color: var(--color-h)
+    color: var(--color-h);
+    padding-top: 94px;
 }
 
 .name {
@@ -342,6 +399,7 @@ footer {
 }
 
 .buttons {
+    display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -349,13 +407,76 @@ footer {
     line-height: 1.62;
     color: var(--color-h);
     cursor: pointer;
+    border: transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
 }
 
 .buttons:hover,
 .buttons:focus {
     color: #FFFFFF;
     background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+.portfolio-buttons {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.buttons-list {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+}
+
+.buttons-list .buttons-item {
+    padding-right: 8px;
+}
+
+.projects-container {
+    width: 1210px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+}
+
+.project-list {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+    margin-left: -30px;
+    margin-top: -30px;
+    text-align: left;
+}
+
+.project-list .project-item {
+    flex-basis: calc(100% / 3 -30px);
+
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+.content-card {
+    padding: 20px 24px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
+
 
 .project-name {
     font-weight: 700;
