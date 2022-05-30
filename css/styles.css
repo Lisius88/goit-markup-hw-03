@@ -82,11 +82,13 @@ header {
 }
 
 .nav {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: #212121;
-    ;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .nav:hover,
@@ -136,8 +138,6 @@ header {
 
 .site-nav .item {
     margin-right: 50px;
-    margin-top: 32px;
-    margin-bottom: 32px;
 }
 
 .site-nav .item:first-child {
@@ -163,6 +163,12 @@ header {
 
 /* Footer */
 
+.footer-section {
+    background-color: var(--background-footer);
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
 .footer-container {
     width: 1200px;
     margin-left: auto;
@@ -177,9 +183,21 @@ header {
     font-size: 14px;
     line-height: 1.71;
     color: var(--background-main);
+    margin-bottom: 9px;
 }
 
-.mail-tel {
+.mail {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
+}
+
+.tel {
+    display: block;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -192,23 +210,25 @@ header {
     color: #2196F3;
 }
 
-.footer-adress {
-    padding-bottom: 60px;
-}
+.footer-adress {}
 
 .div-logo {
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-footer {
-    background-color: var(--background-footer);
-}
+
 
 /* Main */
 
-.hero-container {
+
+.section-hero {
     background-color: var(--background-footer);
+    padding-top: 200px;
+    padding-bottom: 280px;
+}
+
+.hero-container {
+
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -255,6 +275,10 @@ footer {
 
 /* Main-info */
 
+.main-section {
+    padding-top: 94px;
+}
+
 .main-container {
     width: 1200px;
     margin-left: auto;
@@ -270,7 +294,6 @@ footer {
 
 
     display: flex;
-    padding-top: 94px;
     margin-left: -30px;
 
 
@@ -305,6 +328,11 @@ footer {
 
 /* Чем занимаемся */
 
+.about-us-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .about-us-container {
     width: 1200px;
     margin-left: auto;
@@ -325,7 +353,6 @@ footer {
     flex-basis: calc(100% / 3 -30px);
     margin-left: 30px;
     margin-top: 50px;
-    margin-bottom: 94px;
 }
 
 
@@ -336,10 +363,15 @@ footer {
     line-height: 1.16;
     text-align: center;
     color: var(--color-h);
-    padding-top: 94px;
 }
 
 /* Team */
+
+.team {
+    background-color: var(--background-secondmain);
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
 
 .team-container {
     width: 1200px;
@@ -364,7 +396,6 @@ footer {
 
     margin-left: 30px;
     margin-top: 50px;
-    margin-bottom: 94px;
 }
 
 .card {
@@ -383,7 +414,6 @@ footer {
     line-height: 1.16;
     text-align: center;
     color: var(--color-h);
-    padding-top: 94px;
 }
 
 .name {
@@ -392,6 +422,7 @@ footer {
     line-height: 1.2;
     color: var(--color-h);
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .position {
@@ -402,6 +433,12 @@ footer {
 }
 
 /* Portfolio html */
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .for-me {
     display: none;
 }
@@ -433,6 +470,7 @@ footer {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 50px;
 
 }
 
@@ -442,7 +480,7 @@ footer {
 
     display: flex;
     justify-content: center;
-    padding-top: 94px;
+
 }
 
 .buttons-list .buttons-item {
@@ -455,7 +493,6 @@ footer {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 50px;
 }
 
 .project-list {
@@ -464,7 +501,6 @@ footer {
 
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
     margin-left: -30px;
     margin-top: -30px;
     text-align: left;
@@ -491,14 +527,11 @@ footer {
     font-size: 18px;
     line-height: 2;
     color: var(--color-h);
+    margin-bottom: 4px;
 }
 
 .project-type {
     font-size: 16px;
     line-height: 1.9;
     color: var(--color-text);
-}
-
-.team {
-    background-color: var(--background-secondmain);
 }
